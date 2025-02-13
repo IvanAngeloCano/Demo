@@ -1,4 +1,12 @@
 
+// _mixins.scss
+@mixin flex-center {
+  display: flex;
+  flex-direction: column; // Stacks elements like pancakes 🥞
+  align-items: center; // Centers horizontally
+  justify-content: center; // Centers vertically (if parent has height)
+  text-align: center; // Ensures text stays centered
+}
 
 
 
@@ -11,11 +19,7 @@
 
 .header {
   background-color: purple;
-  display: flex;
-  flex-direction: column; // Stacks elements like pancakes 🥞
-  align-items: center; // Centers horizontally
-  justify-content: center; // Centers vertically (if parent has height)
-  text-align: center; // Ensures text stays centered
+  @include flex-center;
   height: 100px;
 }
 
@@ -32,4 +36,11 @@ h2 {
 
 .header2 {
   background-color: green;
+  @include flex-center;
+  height: 50px;
+
+  p {
+    color: white;
+    text-align: center;
+  }
 }
