@@ -1,3 +1,29 @@
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Afacad', sans-serif;
+}
+
+.header {
+  background-color: purple;
+  display: flex;
+  flex-direction: column; // Stacks elements like pancakes 🥞
+  align-items: center; // Centers horizontally
+  justify-content: center; // Centers vertically (if parent has height)
+  text-align: center; // Ensures text stays centered
+  height: 100px;
+}
+
+
+h1 {
+  color: white;
+}
+
 h2 {
-  color: purple;
+  color: white;
 }
